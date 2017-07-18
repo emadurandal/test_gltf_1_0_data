@@ -1,0 +1,205 @@
+{
+    "textures": {}, 
+    "accessors": {
+        "anim_time": {
+            "count": 199, 
+            "name": "anim_time", 
+            "byteStride": 4, 
+            "bufferView": "anim_time_Buffer", 
+            "componentType": 5126, 
+            "byteOffset": 0, 
+            "type": "SCALAR"
+        }, 
+        "pSphere1_mesh_TEXCOORD_0": {
+            "count": 192, 
+            "name": "pSphere1_mesh_TEXCOORD_0", 
+            "byteStride": 8, 
+            "bufferView": "pSphere1_mesh_TEXCOORD_0_Buffer", 
+            "componentType": 5126, 
+            "byteOffset": 0, 
+            "type": "VEC2"
+        }, 
+        "pSphere1_mesh_Polygons_0": {
+            "count": 192, 
+            "name": "pSphere1_mesh_Polygons_0", 
+            "byteStride": 2, 
+            "bufferView": "pSphere1_mesh_Polygons_0_Buffer", 
+            "componentType": 5123, 
+            "byteOffset": 0, 
+            "type": "SCALAR"
+        }, 
+        "pSphere1_mesh_Normals": {
+            "count": 192, 
+            "name": "pSphere1_mesh_Normals", 
+            "byteStride": 12, 
+            "bufferView": "pSphere1_mesh_Normals_Buffer", 
+            "componentType": 5126, 
+            "byteOffset": 0, 
+            "type": "VEC3"
+        }, 
+        "pSphere1_mesh_Positions": {
+            "count": 192, 
+            "name": "pSphere1_mesh_Positions", 
+            "byteStride": 12, 
+            "bufferView": "pSphere1_mesh_Positions_Buffer", 
+            "componentType": 5126, 
+            "byteOffset": 0, 
+            "type": "VEC3"
+        }
+    }, 
+    "animations": {}, 
+    "samplers": {}, 
+    "scene": "default", 
+    "scenes": {
+        "default": {
+            "nodes": [
+                "__DefaultSceneRoot__"
+            ]
+        }
+    }, 
+    "materials": {
+        "lambert2_mat": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "LAMBERT", 
+                    "values": {
+                        "diffuse": [
+                            0.4000000059604645, 
+                            0.4000000059604645, 
+                            0.4000000059604645, 
+                            1.0
+                        ], 
+                        "ambient": [
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ]
+                    }
+                }
+            }, 
+            "name": "lambert2_mat"
+        }, 
+        "__DefaultMaterial__": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "LAMBERT", 
+                    "values": {
+                        "diffuse": [
+                            0.5, 
+                            0.5, 
+                            0.5, 
+                            1.0
+                        ], 
+                        "ambient": [
+                            0.1, 
+                            0.1, 
+                            0.1, 
+                            1.0
+                        ]
+                    }
+                }
+            }, 
+            "name": "__DefaultMaterial__"
+        }
+    }, 
+    "meshes": {
+        "pSphere1_mesh": {
+            "primitives": [
+                {
+                    "indices": "pSphere1_mesh_Polygons_0", 
+                    "attributes": {
+                        "POSITION": "pSphere1_mesh_Positions", 
+                        "TEXCOORD_0": "pSphere1_mesh_TEXCOORD_0", 
+                        "NORMAL": "pSphere1_mesh_Normals"
+                    }, 
+                    "material": "lambert2_mat", 
+                    "mode": 4
+                }
+            ], 
+            "name": "pSphere1_mesh"
+        }
+    }, 
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ], 
+    "images": {}, 
+    "nodes": {
+        "__DefaultSceneRoot__": {
+            "children": [
+                "pSphere1"
+            ], 
+            "name": "__DefaultSceneRoot__"
+        }, 
+        "pSphere1": {
+            "matrix": [
+                1.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                1.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                1.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                0.0, 
+                1.0
+            ], 
+            "meshes": [
+                "pSphere1_mesh"
+            ], 
+            "children": [], 
+            "name": "pSphere1"
+        }
+    }, 
+    "bufferViews": {
+        "pSphere1_mesh_TEXCOORD_0_Buffer": {
+            "buffer": "output", 
+            "byteLength": 1536, 
+            "target": 34963, 
+            "byteOffset": 4992, 
+            "name": "pSphere1_mesh_TEXCOORD_0_Buffer"
+        }, 
+        "pSphere1_mesh_Polygons_0_Buffer": {
+            "buffer": "output", 
+            "byteLength": 384, 
+            "target": 34962, 
+            "byteOffset": 0, 
+            "name": "pSphere1_mesh_Polygons_0_Buffer"
+        }, 
+        "pSphere1_mesh_Positions_Buffer": {
+            "buffer": "output", 
+            "byteLength": 2304, 
+            "target": 34963, 
+            "byteOffset": 384, 
+            "name": "pSphere1_mesh_Positions_Buffer"
+        }, 
+        "anim_time_Buffer": {
+            "buffer": "output", 
+            "byteLength": 796, 
+            "target": 34963, 
+            "byteOffset": 6528, 
+            "name": "anim_time_Buffer"
+        }, 
+        "pSphere1_mesh_Normals_Buffer": {
+            "buffer": "output", 
+            "byteLength": 2304, 
+            "target": 34963, 
+            "byteOffset": 2688, 
+            "name": "pSphere1_mesh_Normals_Buffer"
+        }
+    }, 
+    "buffers": {
+        "output": {
+            "byteLength": 7324, 
+            "type": "arraybuffer", 
+            "name": "output", 
+            "uri": "output.bin"
+        }
+    }
+}
